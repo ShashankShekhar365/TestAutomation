@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 
-public class MyFirstTestNG extends BaseTest {
+public class MyFirstTest extends BaseTest {
 
 	@Test(dataProvider = "testdata")
 	public static void LoginTest(String username, String password) throws InterruptedException {

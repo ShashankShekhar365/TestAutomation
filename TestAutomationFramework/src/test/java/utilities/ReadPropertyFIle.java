@@ -8,9 +8,11 @@ public class ReadPropertyFIle {
 
 	public static void main(String[] args) throws IOException {
 
+//		FileReader fr = new FileReader(
+//				"C:\\Users\\Shashank's Laptop\\Desktop\\Selenium\\TestAutomationFramework\\src\\test\\resources\\configfiles\\config.properties");
 		FileReader fr = new FileReader(
-				"C:\\Users\\Shashank's Laptop\\Desktop\\Selenium\\TestAutomationFramework\\src\\test\\resources\\configfiles\\config.properties");
-
+				System.getProperty("user.dir")+ "\\src\\test\\resources\\configfiles\\config.properties");
+		
 		Properties p = new Properties();
 
 		p.load(fr);
